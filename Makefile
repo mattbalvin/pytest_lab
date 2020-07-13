@@ -7,8 +7,8 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=pytest_lab_cov test/*.py
-	python -m pytest --nbval notebook.ipynb
+	python -m pytest -vv --cov=libpoc tests/*.py
+	#python -m pytest --nbval notebook.ipynb
 	
 format:
 	black *.py

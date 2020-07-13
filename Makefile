@@ -14,6 +14,6 @@ format:
 	black *.py
 
 lint: format
-	pylint --disable=R,C hello
+	pylint --disable=R,C pocapp
 
 all: install test lint

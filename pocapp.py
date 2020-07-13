@@ -2,8 +2,9 @@
 
 from libpoc.poc import *
 
+
 def use_simple_function():
-    print (simple_function("foo"))
+    print(simple_function("foo"))
     return 0
 
 

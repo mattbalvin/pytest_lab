@@ -8,12 +8,13 @@ install:
 
 test:
 	python -m pytest -vv --cov=libpoc tests/*.py
-	#python -m pytest --nbval notebook.ipynb
+	python -m pytest --nbval poc_notebook.ipynb
 	
-format:
-	black *.py
+#format:
+#	black *.py
 
-lint: format
-	pylint --disable=R,C pocapp
+#lint: format
+lint:
+	python -m pylint --disable=R,C pocapp
 
 all: install test lint

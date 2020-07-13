@@ -1,7 +1,6 @@
 pytest
 pytest-cov
 pylint
-black
 jupyter
 pandas
 nbval

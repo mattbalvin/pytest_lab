@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from libpoc.poc import *
+from libpoc.poc import simple_function
 
 
 def use_simple_function():

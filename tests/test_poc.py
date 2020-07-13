@@ -1,4 +1,4 @@
-from libpoc.poc import *
+from libpoc.poc import number_ten, simple_function
 
 def test_number_ten():
   assert number_ten() == 10

@@ -13,4 +13,7 @@ test:
 lint:
 	pyline --disable=R,C myrepolib cli web
 
-all: install test lint
+format:
+	black *.py
+
+all: install test lint format

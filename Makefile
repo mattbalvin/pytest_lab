@@ -10,10 +10,10 @@ test:
 	python -m pytest -vv --cov=pytest_lab_cov test/*.py
 	python -m pytest --nbval notebook.ipynb
 	
-lint:
-	pyline --disable=R,C myrepolib cli web
-
 format:
 	black *.py
 
-all: install test lint format
+lint: format
+	pylint --disable=R,C hello
+
+all: install test lint
